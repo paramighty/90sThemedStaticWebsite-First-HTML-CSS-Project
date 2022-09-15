@@ -1,12 +1,13 @@
-  html {
+html {
   font-size: 16px;
 }
-/* blah blah */
 .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row;
-  margin: 2rem 2rem; 
+  margin: 2rem 2rem;
+  flex: 1;
 }
 
 .content-card {
@@ -15,134 +16,39 @@
   align-items: center;
   background-color: whitesmoke;
   padding: 6rem 6rem;
-  border: .25rem solid;
-  border-color: #39FF14 ;
+  border: 0.25rem solid;
+  border-color: #00ff00;
   border-radius: 20px;
   height: 10vh;
   width: 5vw;
   position: relative;
   max-width: 20px;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   font-size: 2rem;
   text-align: center;
   flex-wrap: wrap;
   overflow: auto;
   flex-basis: auto;
   color: black;
- 
-  }
-
-.content-card:hover{
-    background: #ff1493;
-    box-shadow: 2px 2px 15px 0 rgba(135,135,135, 0.4);
-    transition: all 0.5s ease 0s;
 }
 
+.content-card:hover {
+  background: #ff1493;
+  box-shadow: 2px 2px 15px 0 rgba(135, 135, 135, 0.4);
+  transition: all 0.5s ease 0s;
+}
 
-
-/*
-.music {
-  display: flex;
-  align-items: center;
-  background-color: whitesmoke;
-  padding: 100px;
-  border: 1px dotted;
-  border-color: darkred;
-  border-radius: 20px;
-  height: 100px;
-  margin: 1rem;
+.hero-section p {
+  text-align: center;
   position: relative;
-  width: 60px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: x-large;
-} 
-
-.music:hover{
-  
-    background: #ff1493;
-    box-shadow: 2px 2px 15px 0 rgba(135,135,135, 0.4);
-    transition: all 0.5s ease 0s;
-}
-.movies {
-  display: flex;
-  align-items: center;
-  background-color: whitesmoke;
-  padding: 100px;
-  border: 1px dotted;
-  border-color: darkred;
-  border-radius: 20px;
-  height: 100px;
-  margin: 1rem;
-  position: relative;
-  width: 60px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: x-large;
-} 
-
-.movies:hover{
-  
-    background: #ff1493;
-    box-shadow: 2px 2px 15px 0 rgba(135,135,135, 0.4);
-    transition: all 0.5s ease 0s;
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
 }
 
-.technology {
-  display: flex;
-  align-items: center;
-  background-color: whitesmoke;
-  padding: 100px;
-  border: 1px dotted;
-  border-color: darkred;
-  border-radius: 20px;
-  height: 100px;
-  margin: 1rem;
-  position: relative;
-  width: 60px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: x-large;
-} 
-
-.technology:hover{
-  
-    background: #ff1493;
-    box-shadow: 2px 2px 15px 0 rgba(135,135,135, 0.4);
-    transition: all 0.5s ease 0s;
-}
-
-.fashion {
-  display: flex;
-  align-items: center;
-  background-color: whitesmoke;
-  padding: 100px;
-  border: 1px dotted;
-  border-color: darkred;
-  border-radius: 20px;
-  height: 100px;
-  margin: 1rem;
-  position: relative;
-  width: 60px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: x-large;
-} 
-
-.fashions:hover{
-  
-    background: #ff1493;
-    box-shadow: 2px 2px 15px 0 rgba(135,135,135, 0.4);
-    transition: all 0.5s ease 0s;
-}
-
-.wrapper {
-width: 80vw;
-margin:0 auto;
-background-image:linear-gradient(salmon,aqua);
-border: 2px solid rgb(92, 205, 100);
-border-style: dashed;
-}
-*/
 h1.pagetitle {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   display: flex;
   justify-content: flex-start;
   padding-left: 2rem;
@@ -152,114 +58,77 @@ h1.pagetitle {
 .hero-image {
   display: flex;
   width: 100%;
-  max-height: 400px;
+  max-height: 100rem;
   object-fit: cover;
-  filter: grayscale();
   position: sticky;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 480px;
+  background-image: url("the90scassette.jpg");
+  font-family: 'Monoton', cursive;
+  font-size: 3rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .hero-image {
+    width: 100%;
+  }
+}
+.writeonimage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 body {
-    background-color:lightpink;
-    margin: 0;
+  background-color: lightpink;
+  margin: 0;
 }
 
 nav {
-color: black;
-display: flex;
-justify-content:end;
-font-family: 'Roboto Flex', sans-serif;
-font-size: 0.95rem;
+  color: black;
+  display: flex;
+  justify-content: end;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 0.95rem;
 }
 
 nav a {
   margin: 1rem 1rem;
 }
 
-.contacting {
-  
-  position: relative;
-  display: inline-block;
-
-}
-
 .contacting-menu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #7abac6
+  ;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
+  border-radius: .25rem;
 }
 
-.hero-image {
-  border: 1px;
-  border-color:cadetblue;
-  justify-content: center;
+.contacting:hover .contacting-menu {
+  display: block;
 }
 
 a:hover {
   font-weight: 900;
 }
 
-.beautification {
-    float:left;
-    width: 50%;
-    text-align: center;
-    
-  }
-  
-  .beautification img {
-    padding: 1.5rem;
-  
-  }
-  .content-box::after {
-    content: "";
-    clear: both;
-    display:table;
-    padding-bottom: 15px;
-  
-  }
-
-  .content-box img {
-    width: 200px;
-    height: 200px;
-    }
-    @media screen and (max-width: 600px) {
-      .content-box img {
-        width: 100px;
-        height: 100px;
-    }
-      
-    }
-
-    
-p {
-text-align: center;
-}    
-.content-title {
-  text-align: center;
-  
-  background-color: #ffff00;
-}
-
-.content-box {
-  margin: 1rem; 
-}
-
-
-footer:hover{
-  background-color:fuchsia
-  
-}
-footer{
+footer {
   position: relative;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
 
-.content-title {
-  font-size: 2rem;
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
+footer:hover {
+  background-color: fuchsia;
 }
+
