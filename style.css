@@ -2,32 +2,82 @@ html {
   font-size: 16px;
 }
 
-/*
-#overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: powderblue;
-  z-index: 2;
-  cursor: pointer;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightpink;
 
 }
 
-#text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%)
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightpink;
+  color: brown;
+}
 
-}*/
+.brand-title {
+
+  font-family: "Share Tech Mono", monospace;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Roboto Flex", sans-serif;
+
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: brown;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+
+  background-color: #83c0be;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  width: 21px;
+}
+
+.toggle-button .bar {
+
+  height: 3px;
+  width: 100%;
+  background-color: brown;
+  border-radius: 10px;
+}
+
+.navbar-links.active {
+  display: flex; /*do not understand*/
+}
+
+
 
 .content {
   display: flex;
@@ -67,7 +117,7 @@ html {
   transform: translate(50px);
   
 }
-
+/*
 .hero-section p {
   text-align: center;
   position: relative;
@@ -76,7 +126,9 @@ html {
   transform: translate(-50%, -50%);
   color: black;
 }
+*/
 
+/*
 h1.pagetitle {
   font-family: "Share Tech Mono", monospace;
   display: flex;
@@ -85,9 +137,14 @@ h1.pagetitle {
   margin: 0.5rem;
 }
 
+*/
+
 .hero-image {
   display: flex;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 50vh;
   max-height: 100rem;
   object-fit: cover;
   position: sticky;
@@ -95,10 +152,10 @@ h1.pagetitle {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 480px;
   background-image: url("the90scassette.jpg");
   font-family: 'Monoton', cursive;
   font-size: 3rem;
+  flex-wrap: wrap;
 }
 
 
@@ -108,25 +165,27 @@ h1.pagetitle {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 3rem;
 }
 
-body {
-  background-color: lightpink;
-  margin: 0;
-}
-
+/*
 nav {
   color: black;
   display: flex;
   justify-content: end;
   font-family: "Roboto Flex", sans-serif;
   font-size: 0.95rem;
+  flex-wrap: wrap;
 }
 
 nav a {
+  
   margin: 1rem 1rem;
 }
 
+*/
+
+/*
 .contacting-menu {
   display: none;
   position: absolute;
@@ -146,6 +205,7 @@ nav a {
 a:hover {
   font-weight: 900;
 }
+*/
 
 footer {
   position: relative;
@@ -158,14 +218,57 @@ footer:hover {
   background-color: fuchsia;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 661px) {
   .hero-image {
+
+    
+    width: 100vw;
+  }
+ 
+  .writeonimage {
+    font-size: 2rem;
+  }
+
+  .toggle-button {
+    display: flex;
+
+  }
+  .navbar-links { 
+    display: none;
     width: 100%;
   }
 
-  .writeonimage {
-    font-size: small;
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+
+  @media screen and (min-width: 661px) and (max-width: 888px) {
+    .writeonimage { 
+      font-size: 2rem;
+    } 
+  }
+  /* 
+  nav {
+    flex-direction: column;
+    
+  }
+*/
+}
+
+
+
+  /*
   @media screen and (max-width: 902px){
     font-size: 2rem;
   }
