@@ -111,34 +111,6 @@ body {
   transition: transform 2s;
 }
 
-.content-card:hover {
-  background: #ff1493;
-  box-shadow: 2px 2px 15px 0 rgba(135, 135, 135, 0.4);
-  transform: translate(50px);
-  
-}
-/*
-.hero-section p {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-}
-*/
-
-/*
-h1.pagetitle {
-  font-family: "Share Tech Mono", monospace;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 2rem;
-  margin: 0.5rem;
-}
-
-*/
-
 .hero-image {
   display: flex;
   margin: 0;
@@ -168,29 +140,124 @@ h1.pagetitle {
   font-size: 3rem;
 }
 
-
-
 /*
-.contacting-menu {
-  display: none;
-  position: absolute;
-  background-color: #7abac6
-  ;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
-  border-radius: .25rem;
+
+.section-games {
+  background-color: rgba(127,188,213,255);
 }
 
-.contacting:hover .contacting-menu {
-  display: block;
+.section-music {
+  background-color: lightpink;
 }
 
-a:hover {
-  font-weight: 900;
+.section-movies {
+  background-color: #e4d2a9;
 }
+
 */
+
+.content-box-1 {
+  background-color: rgba(127,188,213,255);
+  width: 100%;
+  margin: 0;
+
+}
+
+.content-box-2 {
+  background-color: lightpink;
+  width: 100%;
+  margin: 0;
+
+}
+
+.content-box-3 {
+  background-color: #e4d2a9;
+  width: 100%;
+  margin: 0;
+
+}
+
+.content-box-games-1,.content-box-music-1,.content-box-movies-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box-games-2,.content-box-music-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content-box-games-1 img, .content-box-games-2 img {
+  width: 80vw;
+  height: 40vh;
+  border-radius: .25rem;
+  padding-top: 1rem;
+  max-width: 400px;
+
+}
+
+.content-box-title-music iframe,{
+  width: 30vw;
+  border-radius: .25rem;
+  padding-top: 1rem;;
+}
+
+.content-box-title-movies iframe{
+  width: 85vw;  
+  margin-top: 1rem;
+  border-radius: .75rem;
+}
+
+
+.content-box-games-1 p {
+  font-family: 'Actor', sans-serif;;
+  width: 85vw;
+  text-align: justify;
+  max-width: 400px;
+  line-height: 1.3rem ;
+}
+
+.content-box-games-2 p {
+  font-family: 'Actor', sans-serif;
+  width: 85vw;
+  text-align: justify;
+  max-width: 400px;
+  line-height: 1.3rem;
+}
+
+.content-box-music-1 p {
+  font-family: 'Actor', sans-serif;
+  width: 85vw;
+  text-align: justify;
+  max-width: 400px;
+  line-height: 1.3rem;
+}
+
+.content-box-movies-1 p {
+  font-family: 'Actor', sans-serif;;
+  width: 85vw;
+  text-align: justify;
+}
+
+
+
+.content-box-title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+  color: brown;
+  font-family: "Share Tech Mono", monospace;
+  padding: 1rem;
+}
+
+
+
+
 
 footer {
   position: relative;
@@ -236,6 +303,7 @@ footer:hover {
   .navbar-links li {
     text-align: center;
   }
+}
 
 
   @media screen and (min-width: 661px) and (max-width: 888px) {
@@ -243,24 +311,40 @@ footer:hover {
       font-size: 2rem;
     } 
   }
-  /* 
-  nav {
-    flex-direction: column;
-    
+  
+  @media screen and (min-width: 592px) and (max-width: 660px) {
+    .writeonimage { 
+      font-size: 1.50rem;
+    } 
   }
-*/
+  
+  @media screen and (max-width: 591px) {
+    .writeonimage { 
+      font-size: 1.0rem;
+    } 
+  }
+
+@media screen and (max-width: 900px) {
+  .content-box-games-2 {
+    display: none;
+  }
+
+  .content-box-1 {
+    height: fit-content;
+  }
+  
 }
 
 
-
-  /*
-  @media screen and (max-width: 902px){
-    font-size: 2rem;
+@media screen and (min-width: 901px) {
+  .experiment {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
   }
 
-  @media screen and (min-width: 500px){
-    font-size: small;
-  }
-    
+  .content-box-1 {
+    height: fit-content;
   }
 }
