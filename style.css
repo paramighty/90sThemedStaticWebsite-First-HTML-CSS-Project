@@ -1,350 +1,288 @@
 html {
-  font-size: 16px;
+font-size: 16px;
 }
 
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+}
+
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: light;
+    color: rgb(78, 28, 60);
+}
+h2 {
+    margin: 0;
+    font-family: "Share Tech Mono", monospace;
+    padding-left: 1rem;
+    font-size: 2rem;
+    
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    color: brown;
+    font-family: "Share Tech Mono", monospace;
+    padding: 1rem;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: lightpink;
+margin-top: 0;
+padding: 0;
+background-color: lightpink;
 
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: lightpink;
-  color: brown;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: lightpink;
+color: brown;
 }
 
-.brand-title {
-
-  font-family: "Share Tech Mono", monospace;
-  justify-content: flex-start;
-  padding-left: 1rem;
-  margin: 0.5rem;
-  font-size: 2rem;
-}
 
 .navbar-links ul{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-family: "Roboto Flex", sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+font-family: "Roboto Flex", sans-serif;
 
 }
 
 .navbar-links li {
-  list-style: none;
+list-style: none;
 }
 
 .navbar-links li a {
-  text-decoration: none;
-  color: brown;
-  padding: 1rem;
-  display: block;
+text-decoration: none;
+color: brown;
+padding: 1rem;
+display: block;
 }
 
 .navbar-links li:hover {
 
-  background-color: #83c0be;
+background-color: #83c0be;
 }
 
 .toggle-button {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 31px;
-  width: 21px;
+position: absolute;
+top: .75rem;
+right: 1rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 31px;
+width: 21px;
 }
 
 .toggle-button .bar {
 
-  height: 3px;
-  width: 100%;
-  background-color: brown;
-  border-radius: 10px;
+height: 3px;
+width: 100%;
+background-color: brown;
+border-radius: 10px;
 }
 
 .navbar-links.active {
-  display: flex; /*do not understand*/
+display: flex; /*do not understand*/
 }
 
-
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: row;
-  margin: 2rem 2rem;
-  flex: 1;
-}
-
-.content-card {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: whitesmoke;
-  padding: 6rem 6rem;
-  border: 0.25rem solid;
-  border-color: #00ff00;
-  border-radius: 20px;
-  height: 10vh;
-  width: 5vw;
-  position: relative;
-  max-width: 20px;
-  font-family: "Alegreya Sans SC", sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  flex-wrap: wrap;
-  overflow: auto;
-  flex-basis: auto;
-  color: black;
-  transition: transform 2s;
+.bar {
+    
+    margin: .1rem;
 }
 
 .hero-image {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 50vh;
-  max-height: 100rem;
-  object-fit: cover;
-  position: sticky;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-image: url("the90scassette.jpg");
-  font-family: 'Monoton', cursive;
-  font-size: 3rem;
-  flex-wrap: wrap;
+display: flex;
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 50vh;
+max-height: 100rem;
+object-fit: cover;
+position: sticky;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+background-image: url("the90scassette.jpg");
+font-family: 'Monoton', cursive;
+font-size: 3rem;
+flex-wrap: wrap;
 }
 
 
+/* CONTENT CSS */
 
-.writeonimage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
+.games-section {
+background-color: rgba(127,188,213,255);
 }
 
-/*
-
-.section-games {
-  background-color: rgba(127,188,213,255);
+.music-section {
+background-color: lightpink;
 }
 
-.section-music {
-  background-color: lightpink;
-}
-
-.section-movies {
-  background-color: #e4d2a9;
-}
-
-*/
-
-.content-box-1 {
-  background-color: rgba(127,188,213,255);
-  width: 100%;
-  margin: 0;
-
-}
-
-.content-box-2 {
-  background-color: lightpink;
-  width: 100%;
-  margin: 0;
-
-}
-
-.content-box-3 {
-  background-color: #e4d2a9;
-  width: 100%;
-  margin: 0;
-
-}
-
-.content-box-games-1,.content-box-music-1,.content-box-movies-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-box-games-2,.content-box-music-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.movies-section {
+background-color: #e4d2a9;
 }
 
 
-.content-box-games-1 img, .content-box-games-2 img {
-  width: 80vw;
-  height: 40vh;
-  border-radius: .25rem;
-  padding-top: 1rem;
-  max-width: 400px;
-
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.content-box-title-music iframe,{
-  width: 30vw;
-  border-radius: .25rem;
-  padding-top: 1rem;;
+.games-section img {
+    width: 80vw;
+    height: 40vh;
+    border-radius: .25rem;
+    padding-top: 1rem;
+    max-width: 400px;        
 }
 
-.content-box-title-movies iframe{
-  width: 85vw;  
-  margin-top: 1rem;
-  border-radius: .75rem;
-}
+.music-section iframe, .movies-section iframe{
 
-
-.content-box-games-1 p {
-  font-family: 'Actor', sans-serif;;
-  width: 85vw;
-  text-align: justify;
-  max-width: 400px;
-  line-height: 1.3rem ;
-}
-
-.content-box-games-2 p {
-  font-family: 'Actor', sans-serif;
-  width: 85vw;
-  text-align: justify;
-  max-width: 400px;
-  line-height: 1.3rem;
-}
-
-.content-box-music-1 p {
-  font-family: 'Actor', sans-serif;
-  width: 85vw;
-  text-align: justify;
-  max-width: 400px;
-  line-height: 1.3rem;
-}
-
-.content-box-movies-1 p {
-  font-family: 'Actor', sans-serif;;
-  width: 85vw;
-  text-align: justify;
+    border-radius: .25rem;
+    padding-top: 1rem;;
 }
 
 
-
-.content-box-title {
-  font-size: 2rem;
-  text-align: center;
-  padding: 0;
-  color: brown;
-  font-family: "Share Tech Mono", monospace;
-  padding: 1rem;
+.content-box p {
+    font-family: 'Actor', sans-serif;;
+    width: 85vw;
+    text-align: justify;
+    max-width: 400px;
+    line-height: 1.3rem ;
 }
-
-
-
-
 
 footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 footer:hover {
-  background-color: fuchsia;
+    background-color: fuchsia;
 }
+
 
 @media screen and (max-width: 661px) {
-  .hero-image {
+    .hero-image {
 
     
-    width: 100vw;
-  }
- 
-  .writeonimage {
-    font-size: 2rem;
-  }
+        width: 100vw;
+}
 
-  .toggle-button {
-    display: flex;
+    .toggle-button {
+        display: flex;
 
-  }
-  .navbar-links { 
-    display: none;
-    width: 100%;
-  }
+}
+    .navbar-links { 
+        display: none;
+        width: 100%;
+}
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+}
 
-  .navbar-links ul{
-    width: 100%;
-    flex-direction: column;
-  }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+}
 
-  .navbar-links li {
-    text-align: center;
-  }
+    .navbar-links li {
+        text-align: center;
+}
+}
+
+@media (min-width: 300px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 2.0rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 }
 
 
-  @media screen and (min-width: 661px) and (max-width: 888px) {
+
+/*
+@media screen and (min-width: 661px) and (max-width: 888px) {
     .writeonimage { 
-      font-size: 2rem;
+        font-size: 2rem;
     } 
-  }
-  
-  @media screen and (min-width: 592px) and (max-width: 660px) {
+}
+
+@media screen and (min-width: 592px) and (max-width: 660px) {
     .writeonimage { 
-      font-size: 1.50rem;
+        font-size: 1.50rem;
     } 
-  }
-  
-  @media screen and (max-width: 591px) {
+}
+
+@media screen and (max-width: 591px) {
     .writeonimage { 
-      font-size: 1.0rem;
+        font-size: 1.0rem;
     } 
-  }
+}
+*/
 
 @media screen and (max-width: 900px) {
-  .content-box-games-2 {
-    display: none;
-  }
+    .content-box-2 {
+        display: none;
+}
 
-  .content-box-1 {
-    height: fit-content;
-  }
-  
+    .container-section {
+        height: fit-content;
+    }
+
 }
 
 
 @media screen and (min-width: 901px) {
-  .experiment {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: space-evenly;
-  }
+    .experiment {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-evenly;
+    }
 
-  .content-box-1 {
-    height: fit-content;
-  }
+    .container-section {
+        height: fit-content;
+    x`}
 }
