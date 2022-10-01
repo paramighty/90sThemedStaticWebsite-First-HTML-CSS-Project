@@ -124,6 +124,7 @@ flex-wrap: wrap;
 
 /* CONTENT CSS */
 
+
 .games-section {
 background-color: rgba(127,188,213,255);
 }
@@ -155,7 +156,10 @@ background-color: #e4d2a9;
 .music-section iframe, .movies-section iframe{
 
     border-radius: .25rem;
-    padding-top: 1rem;;
+    padding-top: 1rem;
+    border: none;
+    max-width: 400;
+    height: 380;
 }
 
 
@@ -165,6 +169,8 @@ background-color: #e4d2a9;
     text-align: justify;
     max-width: 400px;
     line-height: 1.3rem ;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 footer {
