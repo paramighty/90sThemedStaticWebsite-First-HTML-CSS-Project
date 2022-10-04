@@ -42,6 +42,7 @@ background-color: lightpink;
 }
 
 .navbar {
+
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -153,20 +154,20 @@ background-color: #e4d2a9;
     max-width: 400px;        
 }
 
-.music-section iframe, .movies-section iframe{
+.content-box iframe{
 
     border-radius: .25rem;
     padding-top: 1rem;
     border: none;
     max-width: 400;
-    height: 380;
+    
 }
 
 
 .content-box p {
     font-family: 'Actor', sans-serif;;
     width: 85vw;
-    text-align: justify;
+    text-align: left;
     max-width: 400px;
     line-height: 1.3rem ;
     padding-top: 1rem;
