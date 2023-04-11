@@ -75,29 +75,3 @@ p {
 p:last-child {
   margin-bottom: 2rem;
 }
-
-/* .paragraphone {
-  padding: 1rem;
-  line-height: 2rem;
-  font-size: 1.2rem;
-  text-align: justify;
-}
-
-.paragraphtwo {
-  padding: 1rem;
-  line-height: 2rem;
-  font-size: 1.2rem;
-  text-align: justify;
-}
-
-.paragraphthree {
-  padding: 1rem;
-  line-height: 2rem;
-  font-size: 1.2rem;
-  text-align: justify;
-} */
-
-/* .divider {
-  width: 100%;
-  border-bottom: 0.2rem solid;
-} */
