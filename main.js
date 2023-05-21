@@ -19,12 +19,12 @@ function circle(x, y, r, c) {
   this.r = r;
   this.c = c;
 
-  this.dx = Math.random() * 4 + 1;
+  this.dx = Math.random();
   this.dx *=
     Math.floor(Math.random() * 2) == 1
       ? 1
       : -1;
-  this.dy = Math.random() * 4 + 1;
+  this.dy = Math.random();
   this.dx *=
     Math.floor(Math.random() * 2) == 1
       ? 1
@@ -64,7 +64,7 @@ function circle(x, y, r, c) {
   };
 }
 
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < 700; i++) {
   let r = Math.random() * 1 + 0.5;
   let x =
     Math.random() *
